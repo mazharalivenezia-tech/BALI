@@ -1,21 +1,15 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // This 'base' must match your repository name for GitHub Pages to work
-  base: '/BALI/', 
+  // For GitHub Pages: '/BALI/'
+  // For Vercel/Custom Domain: '/'
+  // We use a conditional check or standard relative pathing.
+  // Setting base to './' is often safest for universal deployment.
+  base: './',
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: './index.html',
-      },
-    },
-  },
-  server: {
-    port: 3000,
-  },
+    emptyOutDir: true,
+  }
 });
