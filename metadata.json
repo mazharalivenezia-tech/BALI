@@ -1,0 +1,8 @@
+{
+  "name": "Dark Fashion Sports - High-Performance Bespoke Apparel",
+  "description": "Dark Fashion Sports: Immersive, high-energy apparel blending dark aesthetics with technical performance. Explore our gallery, design lab, and the latest sports fashion blogs.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
