@@ -2,11 +2,11 @@
 import { Product, Category } from './types';
 
 export const COLORS = {
-  electricBlue: '#00d4ff', // Volt Blue
-  pulseOrange: '#F54A02', // Brand Signature
-  nitroRed: '#ff0033',    // Nitro Red
-  deepObsidian: '#0c0c0c',
-  glassBg: 'rgba(255, 255, 255, 0.03)'
+  electricBlue: '#0369A1', // Deep Tactical Blue
+  pulseOrange: '#C2410C', // Matte Safety Orange
+  nitroRed: '#BE123C',    // Crimson Matte Red
+  deepObsidian: '#080808',
+  glassBg: 'rgba(255, 255, 255, 0.02)'
 };
 
 export const CONTACT_DETAILS = {
@@ -18,183 +18,103 @@ export const CONTACT_DETAILS = {
 export const MOCK_PRODUCTS: Product[] = [
   {
     id: '1',
-    name: 'Phantom Striker V2',
-    category: Category.SPEED,
+    name: 'Total Control Pitch Kit',
+    category: Category.BALL_TEAM,
+    subCategory: 'Football (Soccer)',
     price: 145,
     image: 'https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?q=80&w=1000&auto=format&fit=crop',
     color: 'blue',
-    description: 'High-speed technical weave for zero-drag sprinting.'
+    description: 'High-ventilation technical jersey engineered for football and team-based pitch dynamics.'
   },
   {
     id: '2',
-    name: 'Nitro Power Compression',
-    category: Category.POWER,
+    name: 'Court Matrix Polo',
+    category: Category.INDIVIDUAL_RACKET,
+    subCategory: 'Tennis',
     price: 110,
     image: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?q=80&w=1000&auto=format&fit=crop',
     color: 'red',
-    description: 'Elite power jersey with reinforced core stabilization.'
+    description: 'Precision-fit polo with reinforced shoulder seams for tennis and racket sport mobility.'
   },
   {
     id: '3',
-    name: 'Midfield Matrix Elite',
-    category: Category.ELITE,
+    name: 'Tactical Combat Gi',
+    category: Category.COMBAT,
+    subCategory: 'MMA',
     price: 185,
     image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1000&auto=format&fit=crop',
     color: 'blue',
-    description: 'Total control kit for the underground pitch master.'
+    description: 'Reinforced ripstop fabric designed for elite grappling, Judo, and MMA conditioning.'
   },
   {
     id: '4',
-    name: 'Keeper Shield X-1',
-    category: Category.POWER,
+    name: 'Streamline Competition Jammer',
+    category: Category.WATER,
+    subCategory: 'Swimming',
     price: 160,
     image: 'https://images.unsplash.com/photo-1606902960294-db8efe7a91bf?q=80&w=1000&auto=format&fit=crop',
     color: 'red',
-    description: 'Impact-resistant goaltender tech with kinetic grip.'
+    description: 'Ultra-compressed hydrodynamic surface for competitive swimming and diving.'
   },
   {
     id: '5',
-    name: 'Wing-Back Volt Armor',
-    category: Category.SPEED,
+    name: 'Summit Performance Shell',
+    category: Category.WINTER,
+    subCategory: 'Skiing (Alpine, Cross-Country)',
     price: 135,
     image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop',
     color: 'blue',
-    description: 'Ultra-lightweight kit for rapid defensive transitions.'
+    description: 'Three-layer thermal insulation with moisture management for alpine and cross-country skiing.'
   },
   {
     id: '6',
-    name: 'Deep-Play Catalyst',
-    category: Category.ENDURANCE,
+    name: 'GP Racing Tech Jacket',
+    category: Category.MOTORSPORTS,
+    subCategory: 'Formula 1',
     price: 120,
     image: 'https://images.unsplash.com/photo-1521412644187-c49fa049e84d?q=80&w=1000&auto=format&fit=crop',
     color: 'red',
-    description: 'Sweat-wicking stamina gear for the full 90+ minutes.'
+    description: 'Fire-resistant aesthetic outerwear engineered for high-speed endurance racing.'
   },
   {
     id: '7',
-    name: 'Obsidian Captain Kit',
-    category: Category.ELITE,
+    name: 'Aero-Balance Singlet',
+    category: Category.GYMNASTICS,
+    subCategory: 'Artistic',
     price: 220,
     image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop',
     color: 'blue',
-    description: 'Premium signature kit for field commanders.'
+    description: 'Seamless four-way stretch leotard for rhythmic and artistic gymnastics precision.'
   },
   {
     id: '8',
-    name: 'Sprint-Tech Apex',
-    category: Category.SPEED,
+    name: 'Kinetic Track Singlet',
+    category: Category.ATHLETICS,
+    subCategory: 'Running',
     price: 155,
     image: 'https://images.unsplash.com/photo-1551958219-acbc608c6377?q=80&w=1000&auto=format&fit=crop',
     color: 'blue',
-    description: 'Aerodynamic performance jersey for pure attackers.'
+    description: 'Ultralight aerated mesh designed for sprinting, hurdles, and long-distance track events.'
   },
   {
     id: '9',
-    name: 'Brute-Force Defender',
-    category: Category.POWER,
+    name: 'Endurance Road Bib',
+    category: Category.CYCLING,
+    subCategory: 'Road',
     price: 140,
     image: 'https://images.unsplash.com/photo-1556316301-d83e50054243?q=80&w=1000&auto=format&fit=crop',
     color: 'red',
-    description: 'Heavyweight durability with zero mobility loss.'
+    description: 'Ergonomic padding and aero-contoured sleeves for road and track cycling.'
   },
   {
     id: '10',
-    name: 'Marathon Core Unit',
-    category: Category.ENDURANCE,
+    name: 'Titan Pro Lifting Singlet',
+    category: Category.STRENGTH_WEIGHT,
+    subCategory: 'Weightlifting',
     price: 115,
     image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1000&auto=format&fit=crop',
     color: 'red',
-    description: 'Engineered for the hardest-working players on the pitch.'
-  },
-  {
-    id: '11',
-    name: 'Stealth Shadow Keeper',
-    category: Category.ELITE,
-    price: 195,
-    image: 'https://images.unsplash.com/photo-1628891890467-b79f2c879758?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'The ultimate goaltender kit in matte obsidian finish.'
-  },
-  {
-    id: '12',
-    name: 'Flashpoint Striker',
-    category: Category.SPEED,
-    price: 165,
-    image: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'Nitro-injected fibers for explosive start-stop movement.'
-  },
-  {
-    id: '13',
-    name: 'Tank Unit V3',
-    category: Category.POWER,
-    price: 150,
-    image: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=1000&auto=format&fit=crop',
-    color: 'red',
-    description: 'Maximum protection for physical defensive play.'
-  },
-  {
-    id: '14',
-    name: 'Long-Run Maestro',
-    category: Category.ENDURANCE,
-    price: 130,
-    image: 'https://images.unsplash.com/photo-1511886929837-354d827aae26?q=80&w=1000&auto=format&fit=crop',
-    color: 'red',
-    description: 'Breathable knit for non-stop pitch coverage.'
-  },
-  {
-    id: '15',
-    name: 'Underground Legend Kit',
-    category: Category.ELITE,
-    price: 250,
-    image: 'https://images.unsplash.com/photo-1510051646601-9860a317e897?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'Limited edition bespoke performance wear.'
-  },
-  {
-    id: '16',
-    name: 'Vortex Sprint Jersey',
-    category: Category.SPEED,
-    price: 140,
-    image: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'Whirlwind tech for the fastest players in the league.'
-  },
-  {
-    id: '17',
-    name: 'Titan Power Plate',
-    category: Category.POWER,
-    price: 170,
-    image: 'https://images.unsplash.com/photo-1575361204480-aadea25e6e68?q=80&w=1000&auto=format&fit=crop',
-    color: 'red',
-    description: 'Reinforced plating for high-impact physical matchups.'
-  },
-  {
-    id: '18',
-    name: 'Infinite Stamina Shell',
-    category: Category.ENDURANCE,
-    price: 125,
-    image: 'https://images.unsplash.com/photo-1516731415730-0c641bd0d538?q=80&w=1000&auto=format&fit=crop',
-    color: 'red',
-    description: 'Lightweight endurance tech with zero-heat retention.'
-  },
-  {
-    id: '19',
-    name: 'Director Kit X',
-    category: Category.ELITE,
-    price: 215,
-    image: 'https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'Precision mapping for tactical pitch management.'
-  },
-  {
-    id: '20',
-    name: 'Racer-Back Pro Soccer',
-    category: Category.SPEED,
-    price: 130,
-    image: 'https://images.unsplash.com/photo-1431324155629-1a6eda1eed15?q=80&w=1000&auto=format&fit=crop',
-    color: 'blue',
-    description: 'The standard for professional velocity in modern soccer.'
+    description: 'Heavy-duty compression for core stability during Olympic weightlifting and bodybuilding.'
   }
 ];
 
