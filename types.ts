@@ -1,4 +1,3 @@
-
 export enum Category {
   BALL_TEAM = 'Ball/Team Sports',
   INDIVIDUAL_RACKET = 'Individual/Racket Sports',
@@ -40,7 +39,7 @@ export interface Product {
   subCategory?: string;
   price: number;
   image: string;
-  color: 'blue' | 'red'; // Primary theme color for UI accents
+  color: 'magma' | 'obsidian';
   availableColors?: string[];
   availableSizes?: string[];
   description: string;

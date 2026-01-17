@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --brand-red: #BE123C;
-            --brand-blue: #0369A1;
-            /* Void Obsidian - Deep Professional Dark */
+            --brand-accent: #FF4500;
+            --brand-secondary: #FFFFFF;
+            /* Obsidian Carbon - Deep Professional Dark */
             --bg-deep: #050505; 
             --bg-surface: #0c0d10;
             --bg-lite: #14161b;
-            --border-matte: rgba(255, 255, 255, 0.03);
+            --border-matte: rgba(255, 255, 255, 0.05);
             --text-main: #f8fafc;
             --text-muted: #64748b;
         }
@@ -39,34 +39,42 @@
             border: 1px solid var(--border-matte);
         }
 
-        .mega-menu-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 3rem;
-        }
-
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: var(--bg-deep); }
         ::-webkit-scrollbar-thumb { background: #222; border-radius: 2px; }
-        ::-webkit-scrollbar-thumb:hover { background: var(--brand-red); }
+        ::-webkit-scrollbar-thumb:hover { background: var(--brand-accent); }
         
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
         .card-elite {
             background: var(--bg-surface);
-            border: 1px solid rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.03);
             transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
         .card-elite:hover {
-            border-color: var(--brand-red);
+            border-color: var(--brand-accent);
             transform: translateY(-4px);
             background: var(--bg-lite);
         }
         
-        .section-divider {
-            height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent);
+        .text-accent { color: var(--brand-accent); }
+        .bg-accent { background-color: var(--brand-accent); }
+        .border-accent { border-color: var(--brand-accent); }
+
+        .btn-pro {
+            background: var(--brand-accent);
+            color: white;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            font-family: 'Syncopate', sans-serif;
+            font-size: 10px;
+            transition: all 0.3s;
+        }
+        .btn-pro:hover {
+            filter: brightness(1.1);
+            box-shadow: 0 10px 40px rgba(255, 69, 0, 0.3);
         }
     </style>
 <script type="importmap">
